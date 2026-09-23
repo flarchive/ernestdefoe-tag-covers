@@ -1,0 +1,24 @@
+// Consumers read --tag-cover / --tag-logo (or the short --cov / --lg).
+// Nothing here assumes a particular card markup, so the extension stays
+// independent of whatever renders tags.
+//
+// 🚨 Two attributes, and the difference matters. `data-tag-cover` DRAWS — the
+// rule below paints the cover on anything carrying it. `data-tag-vars` only
+// declares the variables and paints nothing, for an element that wants the
+// crest as a background of its own choosing. Reaching for the first when you
+// meant the second puts a full-bleed photograph behind your layout.
+[data-tag-cover] {
+  background-image: var(--tag-cover);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+// A logo is `contain`, not `cover`: cropping a crest to fill a box is how a
+// logo stops being recognisable.
+[data-tag-logo] {
+  background-image: var(--tag-logo);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
