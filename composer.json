@@ -1,0 +1,65 @@
+{
+    "name": "ernestdefoe/tag-covers",
+    "description": "Cover images for Flarum tags — upload a cover per tag and use it anywhere a tag is rendered as a card.",
+    "keywords": [
+        "flarum",
+        "flarum-extension",
+        "tags",
+        "covers",
+        "images"
+    ],
+    "type": "flarum-extension",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Ernest Defoe",
+            "email": "ernestdefoe@gmail.com"
+        }
+    ],
+    "require": {
+        "php": "^8.3",
+        "flarum/core": "^2.0",
+        "flarum/tags": "^2.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Ernestdefoe\\TagCovers\\": "src/"
+        }
+    },
+    "extra": {
+        "flarum-extension": {
+            "title": "Tag Covers",
+            "category": "feature",
+            "icon": {
+                "name": "fas fa-image",
+                "backgroundColor": "#0ea5e9",
+                "color": "#fff"
+            }
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Ernestdefoe\\TagCovers\\Tests\\": "tests/"
+        }
+    },
+    "require-dev": {
+        "flarum/phpstan": "^2.0",
+        "flarum/testing": "^2.0"
+    },
+    "scripts": {
+        "test": [
+            "@test:integration"
+        ],
+        "test:integration": "phpunit -c tests/phpunit.integration.xml",
+        "test:setup": "@php tests/integration/setup.php",
+        "analyse:phpstan": "phpstan analyse"
+    },
+    "scripts-descriptions": {
+        "test": "Runs all tests.",
+        "test:integration": "Runs all integration tests.",
+        "test:setup": "Sets up a database for use with integration tests. Execute this only once.",
+        "analyse:phpstan": "Run static analysis"
+    },
+    "minimum-stability": "beta",
+    "prefer-stable": true
+}

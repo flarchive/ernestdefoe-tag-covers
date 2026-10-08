@@ -1,0 +1,16 @@
+ernestdefoe-tag-covers:
+  admin:
+    cover_label: Cover image
+    cover_help: Shown wherever this tag is rendered as a card. Landscape works best — around 1200x480. PNG, JPEG, WebP or GIF, up to 8MB.
+    logo_label: Logo
+    logo_help: >-
+      A crest or mark for this tag, drawn over the cover on a card and inside
+      the tag's chip elsewhere. Square works best, and a transparent PNG sits
+      on any colour. Up to 8MB.
+    upload: Choose image
+    replace: Replace image
+    remove: Remove
+    uploading: Uploading…
+    failed: That image could not be uploaded.
+    pending: Uploads when you save the tag.
+    failed_after_create: The tag was created, but its image could not be uploaded. Open the tag and try again.
