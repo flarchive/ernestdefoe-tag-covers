@@ -2,13 +2,13 @@
 
 > **Read-only archive of released versions of ernestdefoe/tag-covers.** Not for installation: use [Packagist](https://packagist.org/packages/ernestdefoe/tag-covers) or the [upstream repository](https://github.com/ernestdefoe/tag-covers).
 
-**1** versions archived · Latest: [`1.1.1`](https://github.com/flarchive/ernestdefoe-tag-covers/tree/archive/v1.1.1) · License: `MIT` · Flarum: `^2.0`
+**0** versions archived · Latest: [`1.2.1`](https://github.com/flarchive/ernestdefoe-tag-covers/tree/archive/v1.2.1) · License: `MIT` · Flarum: `^2.0`
 
 ## Archived Versions
 
 | Version | Released | Flarum | Source |
 |---|---|---|---|
-| `1.1.1` | 2026-09-23 | `^2.0` | [Browse](https://github.com/flarchive/ernestdefoe-tag-covers/tree/archive/v1.1.1) |
+| — | — | — | — |
 
 Catalog entry: [packages/ernestdefoe-tag-covers.json](https://github.com/flarchive/archive-index/blob/main/packages/ernestdefoe-tag-covers.json)
 
