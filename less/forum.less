@@ -1,0 +1,64 @@
+// Consumers read --tag-cover / --tag-logo (or the short --cov / --lg).
+// Nothing here assumes a particular card markup, so the extension stays
+// independent of whatever renders tags.
+//
+// 🚨 Two attributes, and the difference matters. `data-tag-cover` DRAWS — the
+// rule below paints the cover on anything carrying it. `data-tag-vars` only
+// declares the variables and paints nothing, for an element that wants the
+// crest as a background of its own choosing. Reaching for the first when you
+// meant the second puts a full-bleed photograph behind your layout.
+[data-tag-cover] {
+  background-image: var(--tag-cover);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+// A logo is `contain`, not `cover`: cropping a crest to fill a box is how a
+// logo stops being recognisable.
+[data-tag-logo] {
+  background-image: var(--tag-logo);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+// ---- The stock tags page ---------------------------------------------------
+// Only a tile whose tag HAS a cover gets the band (the element is not rendered
+// otherwise), so these rules never touch a plain tile.
+.TagTile-cover {
+  flex: 0 0 auto;
+  height: 104px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+// Core fixes every tile at 200px and clips the rest, which a band would push
+// the last-posted line out of. Once any tile on the page has a cover the row
+// sizes to its content and grid stretches the neighbours to match, so a row
+// never ends up with tiles of different heights.
+.TagTiles:has(.TagTile-cover) > li {
+  height: auto;
+  min-height: 200px;
+}
+
+// 🚨 On a plate, always. A tile is painted in its tag's colour, and a
+// conference's tag colour is usually its brand colour — the ACC crest is navy
+// on a navy tile and simply was not there. A light plate reads on every
+// colour, and because the img only exists for a tag that has a logo, a tile
+// without one never shows an empty plate.
+.TagTile-logo {
+  display: block;
+  flex: 0 0 auto;
+  box-sizing: content-box;
+  width: auto;
+  min-width: 36px;
+  height: 36px;
+  max-width: 120px; // a wordmark widens, it does not overflow the heading
+  padding: 6px;
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.92);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.18);
+  object-fit: contain;
+}
