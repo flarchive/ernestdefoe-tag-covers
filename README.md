@@ -2,13 +2,20 @@
 
 > **Read-only archive of released versions of ernestdefoe/tag-covers.** Not for installation: use [Packagist](https://packagist.org/packages/ernestdefoe/tag-covers) or the [upstream repository](https://github.com/ernestdefoe/tag-covers).
 
-**0** versions archived · Latest: [`1.2.6`](https://github.com/flarchive/ernestdefoe-tag-covers/tree/archive/v1.2.6) · License: `MIT` · Flarum: `^2.0`
+**8** versions archived · Latest: [`1.2.6`](https://github.com/flarchive/ernestdefoe-tag-covers/tree/archive/v1.2.6) · License: `MIT` · Flarum: `^2.0`
 
 ## Archived Versions
 
 | Version | Released | Flarum | Source |
 |---|---|---|---|
-| — | — | — | — |
+| `1.1.1` | 2026-09-23 | `^2.0` | [Browse](https://github.com/flarchive/ernestdefoe-tag-covers/tree/archive/v1.1.1) |
+| `1.2.0` | 2026-10-02 | `^2.0` | [Browse](https://github.com/flarchive/ernestdefoe-tag-covers/tree/archive/v1.2.0) |
+| `1.2.1` | 2026-10-08 | `^2.0` | [Browse](https://github.com/flarchive/ernestdefoe-tag-covers/tree/archive/v1.2.1) |
+| `1.2.2` | 2026-10-15 | `^2.0` | [Browse](https://github.com/flarchive/ernestdefoe-tag-covers/tree/archive/v1.2.2) |
+| `1.2.3` | 2026-10-24 | `^2.0` | [Browse](https://github.com/flarchive/ernestdefoe-tag-covers/tree/archive/v1.2.3) |
+| `1.2.4` | 2026-11-02 | `^2.0` | [Browse](https://github.com/flarchive/ernestdefoe-tag-covers/tree/archive/v1.2.4) |
+| `1.2.5` | 2026-11-15 | `^2.0` | [Browse](https://github.com/flarchive/ernestdefoe-tag-covers/tree/archive/v1.2.5) |
+| `1.2.6` | 2026-11-16 | `^2.0` | [Browse](https://github.com/flarchive/ernestdefoe-tag-covers/tree/archive/v1.2.6) |
 
 Catalog entry: [packages/ernestdefoe-tag-covers.json](https://github.com/flarchive/archive-index/blob/main/packages/ernestdefoe-tag-covers.json)
 
